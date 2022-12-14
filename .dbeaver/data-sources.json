@@ -1,0 +1,33 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-1850ecab5eb-633e135717b796e0": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "client",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "client",
+				"url": "jdbc:postgresql://localhost:5432/client",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-15",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Разработка",
+			"color": "255,255,255",
+			"description": "База данных для разработки",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
