@@ -153,10 +153,10 @@ def find_client(cursor, f_name=None, l_name=None, e_address=None, ph_number=None
     """, (f_name, l_name, e_address, ph_number))
     print(cur.fetchall())
 
-with psycopg2.connect(database="client", user="postgres", password="atlant22") as conn:
+with psycopg2.connect(database="client", user="postgres", password="****") as conn:
     with conn.cursor() as cur:
         delete_table(cur)
- 
+
         create_db(cur)
 
         add_new_client(cur, 'Иван', 'Иванов', 'ivanov@mail.ru', 11111)
